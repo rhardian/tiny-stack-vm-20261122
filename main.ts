@@ -1,2 +1,4 @@
-f=require('fs'),w=f.writeFileSync,T='04415263,222222212221222,222,89980,12,1141'.split`,`,U=v=>s[l++]=v|0,s={}
-f.readdirSync(I='/input').map(d=>{for(r=x=>f.readFileSync(I+'/'+d+x+'.bin'),p=r('/program'),i=r(I),c=j=k=l=K=0,e=-1,m=[],o='';e<0&&(e=++k>1e6?10:c in p?(t=T[h=(b=p[c++])>>4]?.[a=b&15])?(c+=q=b<3?b*b:t>>2&2)-1 in p?l<(n=t&3)?2:l>>8&t>>2?3:-!!b:9:5:9)<0;)v=q&&p.readIntLE(c-q,q),y=s[l-1],x=s[l-2],l-=n,h?h<3?y|b-19>>2?U([x+y,x-y,Math.imul(x,y),x/y,x%y,(u=x>>>0)/(v=y>>>0),u%v,-y,x&y,x|y,x^y,~y,x<<y,x>>y,x>>>y,,x==y,x<y,u<v][b-16]):e=4:h<4?a<4?a<3?c+=v*(!a|!!y^a&1):K<-63?e=7:(s[--K]=c,c=v&65535):K?c=s[K++]:e=8:h<5?y>>8?e=6:a?m[y]=x:U(m[y]):a<2?(g=o+(a?String.fromCharCode(y):y))[65536]?e=11:o=g:a<3?U(i[j++]??-1):e=y&255:[,[v],[v],[],[y,y],[y,x],[x,y,x],[x,y,s[l]]][a].map(U);f.mkdirSync(q='/output/'+d),w(q+'/stdout.bin',o,'latin1'),w(q+'/exit.txt',''+e)})
+r=require
+f=r('fs')
+eval(''+r('zlib')
+.brotliDecompressSync(f.readFileSync('/bot/z')))
